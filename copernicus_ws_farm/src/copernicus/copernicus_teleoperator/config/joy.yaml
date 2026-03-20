@@ -1,0 +1,16 @@
+enable_button: 0
+e_stop_button: 3
+farm_script_button: 2
+linear_speed_axis: 1
+angular_speed_axis: 0
+
+max_linear_speed: 1.0
+max_angular_speed: 1.0
+
+enable_e_stop: 1
+
+cmd_vel_topic: joy/cmd_vel
+e_stop_pub_topic: e_stop_sw_enable
+farm_button_topic: farm_button/cmd_vel
+
+joy_topic: joy

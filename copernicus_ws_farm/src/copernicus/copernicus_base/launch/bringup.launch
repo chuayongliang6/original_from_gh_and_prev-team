@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="wit_wt901c_imu" default="true"/>
+    <arg name="sick_lms151" default="false"/>
+    <arg name="velodyne_vlp16" default="false"/>
+    <group>
+        <!-- MODEL DESCRIPTION PATH -->
+        <arg name="model" default="$(find copernicus_description)/urdf/copernicus.xacro"/>
+
+        <!-- LOAD ROBOT DESCRIPTION PARAM -->
+        <param name="robot_description" command="$(find xacro)/xacro.py --inorder $(arg model) imu_enabled:=$(arg wit_wt901c_imu) sick_lms151_enabled:=$(arg sick_lms151) velodyne_enabled:=$(arg velodyne_vlp16)"/>
+
+        <!-- COPERNICUS ROS CONTROL NODE -->
+        <node name="copernicus_hardware_node" pkg="copernicus_hardware" type="copernicus_hardware_node"/>
+
+        <!-- SERIAL COMMUNICATION FOR LOWER LEVEL -->
+        <node name="serial_node" pkg="copernicus_hardware" type="serial_node">
+        </node>
+
+        <!-- ROS CONTROL PARAMETERS -->
+        <include file="$(find copernicus_control)/launch/control.launch">
+        </include>
+
+        <!-- ROBOT STATE AND JOINT STATE PARAMETERS -->
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+        <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+        <!-- TELEOPERATOR NODE -->
+        <include file="$(find copernicus_teleoperator)/launch/teleoperator.launch">
+        </include>
+
+		<!-- FARM NODE  --> 
+		<node pkg="farm_node" type="farm_node" name="farm_node" output="screen" />
+  
+        <!-- Sensor Launch -->
+        <include file="$(find copernicus_base)/launch/sensors.launch">
+        </include>
+        
+		<!-- EKF NODE -->
+        <include file="$(find copernicus_localization)/launch/localization.launch"/>
+
+		<!-- LEIMOU LIDAR -->
+		<include file="$(find leimou)/launch/leimou.launch" />
+
+		<!-- PLOUGHSERVO
+		<include file="$(find ploughservo)/launch/plough.launch" /> -->
+    </group>
+</launch>

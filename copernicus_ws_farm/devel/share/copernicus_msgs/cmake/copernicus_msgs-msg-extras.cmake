@@ -1,0 +1,2 @@
+set(copernicus_msgs_MESSAGE_FILES "/home/copernicus/copernicus_ws_farm/src/copernicus/copernicus_msgs/msg/Velocities.msg;/home/copernicus/copernicus_ws_farm/src/copernicus/copernicus_msgs/msg/BMS.msg;/home/copernicus/copernicus_ws_farm/src/copernicus/copernicus_msgs/msg/RPM.msg;/home/copernicus/copernicus_ws_farm/src/copernicus/copernicus_msgs/msg/Diagnostics.msg;/home/copernicus/copernicus_ws_farm/src/copernicus/copernicus_msgs/msg/SonarSensor.msg")
+set(copernicus_msgs_SERVICE_FILES "")

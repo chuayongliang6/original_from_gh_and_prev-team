@@ -1,0 +1,2 @@
+copernicus/copernicus_base:copernicus/copernicus_control:copernicus/copernicus_description:copernicus/copernicus_localization:copernicus/copernicus_msgs:copernicus/copernicus_navigation:copernicus/copernicus_rules:copernicus/copernicus_teleoperator:copernicus_hardware:diff_drive_controller:farm_node:leimou:ploughservo:wit_imu_driver
+-DCATKIN_DEVEL_PREFIX=/home/copernicus/copernicus_ws_farm/devel -DCMAKE_INSTALL_PREFIX=/home/copernicus/copernicus_ws_farm/install -G Unix Makefiles

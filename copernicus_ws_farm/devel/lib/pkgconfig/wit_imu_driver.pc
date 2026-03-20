@@ -1,0 +1,8 @@
+prefix=/home/copernicus/copernicus_ws_farm/devel
+
+Name: wit_imu_driver
+Description: Description of wit_imu_driver
+Version: 0.0.0
+Cflags: -I/home/copernicus/copernicus_ws_farm/src/wit_imu_driver/include
+Libs: -L${prefix}/lib 
+Requires: 

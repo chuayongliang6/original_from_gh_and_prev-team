@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libconversion.so -o /home/copernicus/copernicus_ws_farm/devel/lib/libconversion.so CMakeFiles/conversion.dir/src/conversion.cpp.o 

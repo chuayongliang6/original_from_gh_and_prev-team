@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/include/copernicus_hardware/conversion.h
+stdint.h
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/include/copernicus_hardware/stdint.h
+
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/src/conversion.cpp
+copernicus_hardware/conversion.h
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/src/copernicus_hardware/conversion.h
+stdint.h
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/src/stdint.h
+string.h
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/src/string.h
+

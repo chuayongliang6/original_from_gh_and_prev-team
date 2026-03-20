@@ -1,0 +1,8 @@
+prefix=/home/copernicus/copernicus_ws_farm/devel
+
+Name: copernicus_teleoperator
+Description: Description of copernicus_teleoperator
+Version: 1.1.0
+Cflags: -I/home/copernicus/copernicus_ws_farm/src/copernicus/copernicus_teleoperator/include
+Libs: -L${prefix}/lib -lcopernicus_joy_teleop
+Requires: 

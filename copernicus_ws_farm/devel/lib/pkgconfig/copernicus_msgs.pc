@@ -1,0 +1,8 @@
+prefix=/home/copernicus/copernicus_ws_farm/devel
+
+Name: copernicus_msgs
+Description: Description of copernicus_msgs
+Version: 1.1.0
+Cflags: -I/home/copernicus/copernicus_ws_farm/devel/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs message_runtime

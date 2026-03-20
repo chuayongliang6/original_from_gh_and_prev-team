@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/copernicus/copernicus_ws_farm/install/setup.sh

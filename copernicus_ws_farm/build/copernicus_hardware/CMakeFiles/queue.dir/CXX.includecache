@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/include/copernicus_hardware/queue.h
+stdint.h
+-
+stdbool.h
+-
+
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/src/queue.cpp
+copernicus_hardware/queue.h
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/src/copernicus_hardware/queue.h
+string.h
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/src/string.h
+stdio.h
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/src/stdio.h
+stdlib.h
+/home/copernicus/copernicus_ws_farm/src/copernicus_hardware/src/stdlib.h
+

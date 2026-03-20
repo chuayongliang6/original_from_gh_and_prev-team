@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="leimou" type="leimou_main.py" name="leimou_scan" output="screen">
+    </node>
+
+	<!-- <node pkg="tf" type="static_transform_publisher" name="laser_frame_broadcast" args="-0.2 0 0.4 0 0 0 base_link laser_frame 100" /> -->
+</launch>

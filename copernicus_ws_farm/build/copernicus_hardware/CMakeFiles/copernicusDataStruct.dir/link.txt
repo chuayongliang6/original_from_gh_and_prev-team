@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libcopernicusDataStruct.so -o /home/copernicus/copernicus_ws_farm/devel/lib/libcopernicusDataStruct.so CMakeFiles/copernicusDataStruct.dir/src/copernicusDataStruct.cpp.o 

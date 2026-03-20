@@ -1,0 +1,15 @@
+(cl:defpackage diff_drive_controller-srv
+  (:use )
+  (:export
+   "ACCELERATION"
+   "<ACCELERATION-REQUEST>"
+   "ACCELERATION-REQUEST"
+   "<ACCELERATION-RESPONSE>"
+   "ACCELERATION-RESPONSE"
+   "VELOCITY"
+   "<VELOCITY-REQUEST>"
+   "VELOCITY-REQUEST"
+   "<VELOCITY-RESPONSE>"
+   "VELOCITY-RESPONSE"
+  ))
+

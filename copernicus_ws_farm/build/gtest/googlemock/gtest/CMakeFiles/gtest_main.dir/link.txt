@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libgtest_main.so -o libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -L/home/copernicus/copernicus_ws_farm/build/gtest/googlemock/gtest/src -Wl,-rpath,/home/copernicus/copernicus_ws_farm/build/gtest/googlemock/gtest/src:/home/copernicus/copernicus_ws_farm/build/gtest/googlemock/gtest -lpthread libgtest.so -lpthread 

@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="ploughservo" type="arduinocomm.py" name="ploughservo" output="screen"></node>
+</launch>
